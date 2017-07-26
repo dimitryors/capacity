@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+      <div class="uk-background-primary uk-light uk-padding uk-panel">
+          <p class="uk-h2">{{title}}</p>
+      </div>
+</div>
+<ul uk-tab>
+      <li class="uk-active"><a routerLink="/dashboards">Dashboards</a></li>
+      <li><a routerLink="/dashboard-marketplace" routerLinkActive="active">Dashboard-Marketplace</a></li>
+      <li><a routerLink="/dashboard-sandbox" routerLinkActive="active">Dashboard-Sandbox</a></li>
+      <li><a routerLink="/datasource-board" routerLinkActive="active">Datasource-Board</a></li>
+      <li><a routerLink="/visualize-board" routerLinkActive="active">Visualize-Board</a></li>
+      <li><a routerLink="/capacity" routerLinkActive="active">Capacity</a></li>
+</ul>
+<router-outlet></router-outlet>
